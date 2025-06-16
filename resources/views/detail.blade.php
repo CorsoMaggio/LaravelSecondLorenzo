@@ -20,43 +20,22 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/">homepage</a>
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="/chisono">About</a>
+
                     </li>
+
+                    </a>
                     <li class="nav-item">
                         <a class="nav-link" href="/anni">Age</a>
 
                     </li>
 
-
                     </a>
-
-
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
-    <h1>Benvenuto nella homepage</h1>
-    <div class="container">
-
-        <div class="card" style="width: 18rem;">
-            <ul class="list-group list-group-flush">
-                @foreach ($services as $service)
-                <li class="card"> {{ $service['id'] }}</li>
-                <li class="card"> {{ $service['title'] }}</li>
-                <li class="card"> {{ $service['description'] }}</li>
-                <a href="/detail/{{ $service['id']}}">
-                    {{$service['id']}} - {{$service['title']}}
-                </a>
-                @endforeach
-            </ul>
-        </div>
-
-        <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <h1>Benvenuto</h1>
 </body>
-
-</html>
